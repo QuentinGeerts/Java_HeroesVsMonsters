@@ -15,7 +15,7 @@ public class Main {
          * Création du personnage
          */
 
-        System.out.println("Sélection de la classe :");
+        System.out.println("Selection de la classe :");
 
         while (!(choice.equals("1") || choice.equals("2"))) {
             System.out.println("1. Humain\n2. Nain");

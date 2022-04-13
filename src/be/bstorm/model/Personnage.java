@@ -87,7 +87,7 @@ public class Personnage {
 
         System.out.println(
                 this.getClass().getSimpleName() + " frappe " + personnage.getClass().getSimpleName()
-                + " et lui inflige " + degats + " point" + (degats > 1 ? "s" : "") + " de dégats."
+                + " et lui inflige " + degats + " point" + (degats > 1 ? "s" : "") + " de degats."
         );
 
         personnage.setPv(personnage.getPv() - degats);

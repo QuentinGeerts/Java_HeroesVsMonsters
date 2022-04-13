@@ -39,12 +39,12 @@ public class Heros extends Personnage {
     public void depouiller(Monstre monstre) {
 
         if (monstre instanceof IOr) {
-            System.out.println("[Dépouille] " + ((IOr) monstre).getOr() + " or" + (((IOr) monstre).getOr() > 1 ? "s" : ""));
+            System.out.println("[Depouille] " + ((IOr) monstre).getOr() + " or" + (((IOr) monstre).getOr() > 1 ? "s" : ""));
             this.setOr(getOr() + ((IOr) monstre).getOr());
         }
 
         if (monstre instanceof ICuir) {
-            System.out.println("[Dépouille] " + ((ICuir) monstre).getCuir() + " cuir" + (((ICuir) monstre).getCuir() > 1 ? "s" : ""));
+            System.out.println("[Depouille] " + ((ICuir) monstre).getCuir() + " cuir" + (((ICuir) monstre).getCuir() > 1 ? "s" : ""));
             this.setCuir(getCuir() + ((ICuir) monstre).getCuir());
         }
 

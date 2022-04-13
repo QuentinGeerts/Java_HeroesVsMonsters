@@ -104,9 +104,9 @@ public class Foret {
             gameOver = true;
 
             System.out.println("\n" + p.getClass().getSimpleName() + " est mort.");
-            System.out.println("Le héros a gagné " + nbCombatsGagnes + " combat" + (nbCombatsGagnes > 1 ? "s" : "") + ".");
-            System.out.println("Le héros a accumulé " + ((Heros) p).getOr() + " or" + (((Heros) p).getOr() > 1 ? "s" : "") + ".");
-            System.out.println("Le héros a accumulé " + ((Heros) p).getCuir() + " cuir" + (((Heros) p).getCuir() > 1 ? "s" : "") + ".");
+            System.out.println("Le heros a gagne " + nbCombatsGagnes + " combat" + (nbCombatsGagnes > 1 ? "s" : "") + ".");
+            System.out.println("Le heros a accumule " + ((Heros) p).getOr() + " or" + (((Heros) p).getOr() > 1 ? "s" : "") + ".");
+            System.out.println("Le heros a accumule " + ((Heros) p).getCuir() + " cuir" + (((Heros) p).getCuir() > 1 ? "s" : "") + ".");
         } else {
             nbCombatsGagnes++;
             System.out.println("\n" + p.getClass().getSimpleName() + " est mort.");
