@@ -103,15 +103,13 @@ public class Foret {
         if (p instanceof Heros) {
             gameOver = true;
 
-            System.out.println("");
-            System.out.println(p.getClass().getSimpleName() + " est mort.");
+            System.out.println("\n" + p.getClass().getSimpleName() + " est mort.");
             System.out.println("Le héros a gagné " + nbCombatsGagnes + " combat" + (nbCombatsGagnes > 1 ? "s" : "") + ".");
             System.out.println("Le héros a accumulé " + ((Heros) p).getOr() + " or" + (((Heros) p).getOr() > 1 ? "s" : "") + ".");
             System.out.println("Le héros a accumulé " + ((Heros) p).getCuir() + " cuir" + (((Heros) p).getCuir() > 1 ? "s" : "") + ".");
         } else {
             nbCombatsGagnes++;
-            System.out.println("");
-            System.out.println(p.getClass().getSimpleName() + " est mort.");
+            System.out.println("\n" + p.getClass().getSimpleName() + " est mort.");
             heros.seReposer();
             heros.depouiller((Monstre) p);
             System.out.println("Lancer le prochain combat...");
@@ -129,7 +127,6 @@ public class Foret {
             default -> null;
         };
 
-        System.out.println("");
         System.out.println("Nous rencontrons un monstre : ");
         System.out.println(m);
 

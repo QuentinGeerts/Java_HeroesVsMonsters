@@ -75,10 +75,11 @@ public class Personnage {
 
     @Override
     public String toString() {
-        return this.getClass().getSimpleName() + "" +
+        return "\n" + this.getClass().getSimpleName() + "" +
                 "\n  - Endurance : " + endurance +
                 "\n  - Force : " + force +
-                "\n  - Vie : " + pv;
+                "\n  - Vie : " + pv +
+                "\n";
     }
 
     public void frapper(Personnage personnage) {

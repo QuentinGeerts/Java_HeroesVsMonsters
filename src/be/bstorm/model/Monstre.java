@@ -8,8 +8,9 @@ public class Monstre extends Personnage {
     @Override
     public String toString() {
         return super.toString()
-                + "\n  - Inventaire :"
+                + "  - Inventaire :"
                 + ((this instanceof ICuir) ? "\n     - Cuir : " + ((ICuir) this).getCuir() : "")
-                + ((this instanceof IOr) ? "\n     - Or : " + ((IOr) this).getOr() : "");
+                + ((this instanceof IOr) ? "\n     - Or : " + ((IOr) this).getOr() : "")
+                + "\n";
     }
 }
