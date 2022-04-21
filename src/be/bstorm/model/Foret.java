@@ -4,16 +4,15 @@ import java.util.Scanner;
 
 public class Foret {
 
-    Scanner sc = new Scanner(System.in);
+    private final Heros heros;
 
     /*
         Attributes
      */
-
-    private String nom;
-    private final Heros heros;
-    private Monstre monstre;
     private final De deMonstre;
+    Scanner sc = new Scanner(System.in);
+    private String nom;
+    private Monstre monstre;
     private boolean gameOver;
     private int nbCombatsGagnes;
 
@@ -90,11 +89,13 @@ public class Foret {
 
             tourPersonnage = !tourPersonnage;
 
+            /*
             try {
                 Thread.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+            */
 
         }
     }
@@ -113,7 +114,7 @@ public class Foret {
             heros.seReposer();
             heros.depouiller((Monstre) p);
             System.out.println("Lancer le prochain combat...");
-            sc.nextLine();
+            // sc.nextLine();
 
             monstre = genererMonstre();
         }
