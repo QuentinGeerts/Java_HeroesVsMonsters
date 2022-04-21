@@ -63,7 +63,7 @@ public class Personnage {
      */
 
     public void resetPv() {
-        this.pv = endurance + getModificateur(endurance);
+        this.pv = getEndurance() + getModificateur(getEndurance());
     }
 
     private int getModificateur(int caracteristique) {
@@ -76,14 +76,14 @@ public class Personnage {
     @Override
     public String toString() {
         return "\n" + this.getClass().getSimpleName() + "" +
-                "\n  - Endurance : " + endurance +
-                "\n  - Force : " + force +
-                "\n  - Vie : " + pv +
+                "\n  - Endurance : " + getEndurance() +
+                "\n  - Force : " + getForce() +
+                "\n  - Vie : " + getPv() +
                 "\n";
     }
 
     public void frapper(Personnage personnage) {
-        int degats = getDe4().lance() + getModificateur(force);
+        int degats = getDe4().lance() + getModificateur(getForce());
 
         System.out.println(
                 this.getClass().getSimpleName() + " frappe " + personnage.getClass().getSimpleName()
